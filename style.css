@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 100vw; /* Mejor usar vw para ancho completo */
+    height: 100vh;
+    background: #dfe0e5;
+}
+
+.texto {
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 20%;
+    top: 16%;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.5; /* Usar número en lugar de porcentaje */
+    background-color: antiquewhite;
+}
+
+.texto::placeholder {
+    color: rgb(149, 62, 62);
+}
+
+.texto:focus,
+.texto:active {
+    border: none;
+    outline: none;
+}
+
+.terminos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 20%;
+    top: 80%;
+}
+
+.terminos p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5; /* Usar número en lugar de porcentaje */
+    color: rgb(0, 0, 0);
+    opacity: 0.5; /* Usar decimal para opacidad */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 83%;
+}
+
+.btn-encriptar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    width: 25%;
+    background-color: rgb(139, 34, 62);
+    border-radius: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #dfe0e5;
+}
+
+.btn-desencriptar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    width: 25%;
+    background-color: rgb(142, 83, 99);
+    border-radius: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #dfe0e5;
+}
+
+.btn-desencriptar:hover,
+.btn-encriptar:hover {
+    margin: 0.3em; /* Ajusta según la unidad deseada */
+    width: 24.5%; /* Ajusta según la unidad deseada */
+    padding: 1.8em; /* Ajusta según la unidad deseada */
+}
+
+.encriptado {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: #dfe0e5;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.mensaje-encriptado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+
+.mensaje-encriptado h2 {
+    width: 60%;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2; /* Usar número en lugar de porcentaje */
+    text-align: center;
+    color: azure;
+}
+
+.mensaje-encriptado p {
+    width: 80%;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5; /* Usar número en lugar de porcentaje */
+    text-align: center;
+    color: azure;
+}
